@@ -1,0 +1,264 @@
+<HTML> 
+    <!doctype html>
+    <html lang="">
+    <head>
+      <meta charset="utf-8">
+      <title>Our Creator "Yuto"</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <STYLE type='text/css'>
+
+
+	img{
+transition: 500ms;
+	}
+
+#p1{
+position:absolute;
+  color: white;
+  font-family: fantasy;
+  font-size: 100px;
+  top: 10px;
+  width: 1440px;
+  font-family:fantasy ;
+  text-align: center;
+}
+#p2{
+position:absolute;
+color: white;
+  font-size: 40px;
+  width: 1440px;
+  font-family:fantasy;
+  text-align: center;
+  top: 10px;
+}
+
+#Soccer{
+position: absolute; 
+width:250px;
+left:100px; 
+top:250px; 
+}
+#Yuto{ 
+position:absolute;
+top:250px;
+width:400px;
+opacity: 1;
+}
+
+#food{
+position: absolute;
+width:250px;
+left:100px;
+top:250px;
+opacity: 0;
+}
+#Hutao{
+position:absolute;
+top:250px;
+width:250px;
+left:1000px;
+}
+#triangle-left {
+    top:600px;
+      border-top: 25px solid transparent;
+      border-right: 50px solid white ;
+      border-bottom: 25px solid transparent;
+    }
+#triangle-right {
+      width: 0;
+      left:1000px;
+      top:400px;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-left: 50px solid white;
+      border-bottom: 25px solid transparent;
+    }
+    #bg{
+      width:600px;
+      z-index: -1;
+      top:400px;
+      left:0px;
+    }
+    .p3{
+    text-align: center;
+   color: white;
+    font-size: 30px;
+    position:absolute;
+    left: 400px;
+    font-family:fantasy;
+    top:800px;
+    z-index: 0;
+    line-height: 2;
+  }
+
+</style>
+    </head>
+<Body bgcolor='black'></Body>
+<section>
+
+  <img src='https://football-balls.com/ball_files/2018-world-cup-adidas-telstar-18-mechta-official-final-match-ball-big.png' 
+  id="Soccer"></img>
+  <img src="https://www.allrecipes.com/thmb/Qch2UpqrMAdaLPi6WwJxPHzz6BY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sous-vide-brisket-mfs-193-4x3-1-24930daf16854a9091eaff1503aac157.jpg"
+  id="food"></img>
+  <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/genshin-impact/f/f5/Hu_Tao_Birthday_Banner.png"
+  id="Hutao"></img>
+  <p class="p1" id="p1">About the Creator</p>
+  <p class="p2" id="p2">Yuto</p></a>
+  <p class="p3"id="p3">- Yuto, a 9th grade student in [redacted]. He is [redacted] years-old</p>
+  <table border="0" style="margin-left:1%; margin-top: 25%">
+    <TR>
+      <TD><div id="triangle-left" onclick="clickLeft()"></div></TD>
+      <TD style="padding-left: 400px; padding-right: 800px;"><img src="Yuto.png" id="Yuto"></img></TD>
+      <TD><div id="triangle-right" onclick="clickRight();"></div></TD>
+      </TR>
+      </table>
+  </section>
+    
+      <script> 
+        var selected;
+        
+        Yuto =0;
+          function clickRight(){
+            Yuto = Yuto +1;
+          if(Yuto == 1){
+          document.getElementById("Hutao").style.opacity= 0;
+          document.getElementById("Yuto").style.width= 250 + "px";
+          document.getElementById("Yuto").style.top= 250 + "px";
+          document.getElementById("Yuto").style.left= 1000 + "px";
+          document.getElementById("Hutao").style.left= 150 + "px";
+          document.getElementById("Hutao").style.width= 300 + "px";
+          document.getElementById("Hutao").style.top= 300 + "px";
+          document.getElementById("Soccer").style.width= 400 + "px";
+          document.getElementById("Soccer").style.top= 350 + "px";
+          document.getElementById("Soccer").style.left= 510 + "px";
+          document.getElementById("food").style.left= 150 + "px";
+          document.getElementById("food").style.width= 300 + "px";
+          document.getElementById("food").style.top= 300 + "px";
+          document.getElementById("food").style.opacity= 1;
+          document.getElementById('p3').innerHTML= '-  Yutos favorite sport is soccer, and he is in the soccer team of KAS';
+        }
+          if(Yuto == 2){
+          document.getElementById("Yuto").style.opacity= 0;
+          document.getElementById("Soccer").style.top= 250 + "px";
+          document.getElementById("Soccer").style.left= 950 + "px";
+          document.getElementById("Soccer").style.width= 300 + "px";
+          document.getElementById("food").style.width= 400 + "px";
+          document.getElementById("food").style.top= 350 + "px";
+          document.getElementById("food").style.left= 510 + "px";
+          document.getElementById("Hutao").style.opacity= 1;
+          document.getElementById('p3').innerHTML= '- His favorite food is beef';
+        }
+        if(Yuto == 3){
+          document.getElementById("Yuto").style.opacity= 1;
+          document.getElementById("Soccer").style.opacity= 0;
+          document.getElementById("food").style.top= 300 + "px";
+          document.getElementById("food").style.left= 950 + "px";
+          document.getElementById("food").style.width= 300 + "px";
+          document.getElementById("Hutao").style.width= 400 + "px";
+          document.getElementById("Hutao").style.top= 350 + "px";
+          document.getElementById("Hutao").style.left= 510 + "px";
+          document.getElementById("Yuto").style.left= 150 + "px";
+          document.getElementById("Yuto").style.width= 300 + "px";
+          document.getElementById("Yuto").style.top= 300 + "px";
+          document.getElementById('p3').innerHTML= '-His hobby is to play Genshin Impact and soccer';
+        }
+        if(Yuto == 4){
+          document.getElementById("Soccer").style.opacity= 1;
+          document.getElementById("food").style.opacity= 0;
+          document.getElementById("Hutao").style.top= 250 + "px";
+          document.getElementById("Hutao").style.left= 1000 + "px";
+          document.getElementById("Hutao").style.width= 250 + "px";
+          document.getElementById("Yuto").style.width= 400 + "px";
+          document.getElementById("Yuto").style.top= 250 + "px";
+          document.getElementById("Yuto").style.left= 510 + "px";
+          document.getElementById("Soccer").style.left= 100 + "px";
+          document.getElementById("Soccer").style.width= 250 + "px";
+          document.getElementById("Soccer").style.top= 250 + "px";
+          document.getElementById('p3').innerHTML= '- Yuto, a 9th grade student in KAS. He is 15 years-old';
+          Yuto= 0 ;
+        }else{}
+}
+function clickLeft(){
+  
+  Yuto = Yuto -1;
+  if(Yuto<0){
+    Yuto=3;
+  }
+        if(Yuto == 1){
+          document.getElementById("food").style.opacity= 1;
+          document.getElementById("Soccer").style.opacity= 0;
+          document.getElementById("food").style.top= 300 + "px";
+          document.getElementById("food").style.left= 950 + "px";
+          document.getElementById("food").style.width= 300 + "px";
+          document.getElementById("Yuto").style.left= 150 + "px";
+          document.getElementById("Yuto").style.width= 300 + "px";
+          document.getElementById("Yuto").style.top= 300 + "px";
+          document.getElementById("Hutao").style.width= 400 + "px";
+          document.getElementById("Hutao").style.top= 350 + "px";
+          document.getElementById("Hutao").style.left= 510 + "px";
+          document.getElementById('p3').innerHTML= '-His hobby is to play Genshin Impact and soccer';
+          Yuto =3 ;
+        }
+        else if(Yuto == 3){
+          document.getElementById("food").style.opacity= 1;
+          document.getElementById("Soccer").style.opacity= 0;
+          document.getElementById("food").style.top= 300 + "px";
+          document.getElementById("food").style.left= 950 + "px";
+          document.getElementById("food").style.width= 300 + "px";
+          document.getElementById("Yuto").style.left= 150 + "px";
+          document.getElementById("Yuto").style.width= 300 + "px";
+          document.getElementById("Yuto").style.top= 300 + "px";
+          document.getElementById("Hutao").style.width= 400 + "px";
+          document.getElementById("Hutao").style.top= 350 + "px";
+          document.getElementById("Hutao").style.left= 510 + "px";
+          document.getElementById('p3').innerHTML= '-His hobby is to play Genshin Impact and soccer';
+        }
+         if(Yuto == 2){
+          document.getElementById("Soccer").style.opacity= 1;
+          document.getElementById("Yuto").style.opacity= 0;
+          document.getElementById("Hutao").style.left= 150 + "px";
+          document.getElementById("Hutao").style.width= 300 + "px";
+          document.getElementById("Hutao").style.top= 300 + "px";
+          document.getElementById("Soccer").style.top= 250 + "px";
+          document.getElementById("Soccer").style.left= 950 + "px";
+          document.getElementById("Soccer").style.width= 300 + "px";
+          document.getElementById("food").style.width= 400 + "px";
+          document.getElementById("food").style.top= 350 + "px";
+          document.getElementById("food").style.left= 510 + "px";
+          document.getElementById('p3').innerHTML= '- His favorite food is beef';
+          Yuto= 6;
+      }
+        if(Yuto == 5){
+        document.getElementById("Yuto").style.opacity= 1;
+        document.getElementById("Hutao").style.opacity= 0;
+        document.getElementById("Yuto").style.width= 250 + "px";
+        document.getElementById("Yuto").style.top= 250 + "px";
+        document.getElementById("Yuto").style.left= 1000 + "px";
+        document.getElementById("Soccer").style.width= 400 + "px";
+        document.getElementById("Soccer").style.top= 350 + "px";
+        document.getElementById("Soccer").style.left= 510 + "px";
+        document.getElementById("food").style.left= 150 + "px";
+        document.getElementById("food").style.width= 300 + "px";
+        document.getElementById("food").style.top= 300 + "px";
+        document.getElementById('p3').innerHTML= '- Yutos favorite sport is soccer, and he is in the soccer team of KAS';
+    }
+    if(Yuto == 4){
+          
+          document.getElementById("Hutao").style.opacity= 1;
+          document.getElementById("food").style.opacity= 0;
+          document.getElementById("Hutao").style.top= 250 + "px";
+          document.getElementById("Hutao").style.left= 1000 + "px";
+          document.getElementById("Hutao").style.width= 250 + "px";
+          document.getElementById("Yuto").style.width= 400 + "px";
+          document.getElementById("Yuto").style.top= 250 + "px";
+          document.getElementById("Yuto").style.left= 510 + "px";
+          document.getElementById("Soccer").style.left= 100 + "px";
+          document.getElementById("Soccer").style.width= 250 + "px";
+          document.getElementById("Soccer").style.top= 250 + "px";
+          document.getElementById('p3').innerHTML= '- Yuto, a student in [redacted]. He is ___ years-old';
+          Yuto= 0 ;
+  }
+}
+    </script>
+</html>
